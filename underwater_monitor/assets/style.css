@@ -1,0 +1,51 @@
+:root {
+  color-scheme: dark;
+  font-family: Inter, "Noto Sans JP", system-ui, sans-serif;
+  background: #04131f;
+  color: #eef8ff;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  height: 100dvh;
+  display: grid;
+  grid-template-rows: auto minmax(0, 1fr);
+  background:
+    radial-gradient(circle at 80% 0%, rgba(13, 137, 151, 0.2), transparent 36rem),
+    linear-gradient(180deg, #061a29 0%, #030d15 100%);
+}
+
+header, main {
+  width: calc(100% - 32px);
+  margin-inline: auto;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 28px 0 22px;
+}
+
+.status {
+  max-width: 52%;
+  overflow: hidden;
+  padding: 9px 13px;
+  border: 1px solid #365061;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+main {
+  min-height: 0;
+}
+
+.camera-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}

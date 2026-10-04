@@ -1,0 +1,8 @@
+tests/
+ci/
+deployment/
+ui-tests/
+*.md
+.env
+__pycache__/
+*.pyc
